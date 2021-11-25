@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSize17">17sp</dimen>
+    <dimen name="textSize14">14sp</dimen>
+    <dimen name="textSize33">33sp</dimen>
+    <dimen name="textSize15">15sp</dimen>
+    <dimen name="textSize13">13sp</dimen>
+    <dimen name="numberTable">20sp</dimen>
+    <dimen name="textMenu">18sp</dimen>
+    <dimen name="textSize12">12sp</dimen>
+</resources>

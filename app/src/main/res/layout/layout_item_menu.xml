@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_marginBottom="42dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:background="@drawable/boder_menuimg"
+        android:layout_width="160dp"
+        android:layout_height="220dp">
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/img_food"
+            android:layout_width="143dp"
+            android:layout_height="90dp" />
+        <TextView
+            android:layout_marginTop="25dp"
+            android:id="@+id/txt_namefood"
+            android:gravity="center"
+            android:layout_below="@id/img_food"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:hint="@string/lbl_hint_nameice"
+            android:textSize="@dimen/textMenu"
+            android:textColorHint="@color/h000000"
+            android:textColor="@color/h000000"/>
+        <TextView
+            android:gravity="center"
+            android:id="@+id/txt_money"
+            android:layout_below="@id/txt_namefood"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textSize="@dimen/textMenu"
+            android:hint="@string/lbl_hint_money"
+            android:textColorHint="@color/h000000"
+            android:textColor="@color/h000000"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_food"
+        android:layout_width="300dp"
+        android:layout_height="650dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <EditText
+            android:id="@+id/edt_search_food"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/boder_search"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="21dp"
+            android:textSize="@dimen/textSize12"
+            android:hint="@string/lbl_hint_search"
+            android:paddingLeft="16dp"
+            android:textColor="@color/h000000"
+            android:textColorHint="@color/h000000" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_food"
+            android:layout_below="@+id/edt_search_food"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linear1"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:background="@color/hFF0000"
+                android:text="@string/lbl_cancel"
+                android:textAppearance="@style/MyTabLayoutTextAppearance"
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_marginLeft="11dp"
+                android:background="@color/h00FF00"
+                android:text="@string/lbl_add"
+                android:textAppearance="@style/MyTabLayoutTextAppearance"
+                android:textColor="#000" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

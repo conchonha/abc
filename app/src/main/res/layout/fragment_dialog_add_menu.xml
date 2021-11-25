@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="10dp"
+                   android:text="@string/lbl_add_new"
+                   android:textColor="@color/h000000"
+                   android:textSize="20dp" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="29dp"
+                   android:text="@string/lbl_name"
+                   android:textColor="@color/h000000"
+                   android:textSize="@dimen/textSize12"
+                   android:textStyle="bold" />
+
+               <EditText
+                   android:id="@+id/edt_dialog_menu_name"
+                   android:layout_width="match_parent"
+                   android:layout_height="30dp"
+                   android:textSize="@dimen/textSize12"
+                   android:paddingRight="10dp"
+                   android:layout_marginTop="5dp"
+                   android:paddingLeft="10dp"
+                   android:background="@drawable/background_edittext"
+                   android:inputType="text" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="23dp"
+                   android:text="@string/lbl_price"
+                   android:textColor="@color/h000000"
+                   android:textSize="@dimen/textSize12"
+                   android:textStyle="bold" />
+
+               <EditText
+                   android:id="@+id/edt_dialog_menu_price"
+                   android:layout_width="match_parent"
+                   android:layout_height="30dp"
+                   android:layout_marginTop="5dp"
+                   android:textSize="@dimen/textSize12"
+                   android:paddingRight="10dp"
+                   android:paddingLeft="10dp"
+                   android:background="@drawable/background_edittext"
+                   android:inputType="number" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="23dp"
+                   android:text="@string/lbl_image"
+                   android:textColor="@color/h000000"
+                   android:textSize="@dimen/textSize12"
+                   android:textStyle="bold" />
+
+               <ImageView
+                   android:id="@+id/img_dialog_menu"
+                   android:layout_width="119dp"
+                   android:layout_height="92dp"
+                   android:layout_marginTop="5dp"
+                   android:background="@drawable/background_linerlayout"
+                   android:scaleType="fitXY" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="23dp"
+                   android:text="@string/lbl_category"
+                   android:textColor="@color/h000000"
+                   android:textSize="@dimen/textSize12"
+                   android:textStyle="bold" />
+
+               <RelativeLayout
+                   android:layout_width="112dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="5dp">
+
+                   <Spinner
+                       android:id="@+id/spiner_add_menu"
+                       android:layout_width="112dp"
+                       android:layout_height="27dp"
+                       android:background="@drawable/background_linerlayout" />
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentRight="true"
+                       android:layout_centerVertical="true"
+                       android:src="@drawable/ic_spiner" />
+               </RelativeLayout>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="23dp"
+                   android:text="@string/lbl_number"
+                   android:textColor="@color/h000000"
+                   android:textSize="@dimen/textSize12"
+                   android:textStyle="bold" />
+
+               <EditText
+                   android:id="@+id/edt_dialog_menu_number"
+                   android:layout_width="match_parent"
+                   android:layout_height="30dp"
+                   android:paddingLeft="10dp"
+                   android:layout_marginTop="5dp"
+                   android:paddingRight="10dp"
+                   android:textSize="@dimen/textSize12"
+                   android:background="@drawable/background_edittext"
+                   android:inputType="number" />
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="118dp"
+                   android:gravity="end">
+
+                   <Button
+                       android:id="@+id/btn_cancel"
+                       android:layout_width="wrap_content"
+                       android:layout_height="26dp"
+                       android:background="@color/hFF0000"
+                       android:text="@string/lbl_cancel"
+                       android:textAppearance="@style/MyTabLayoutTextAppearance"
+                       android:textColor="#000" />
+
+                   <Button
+                       android:id="@+id/btn_add"
+                       android:layout_width="wrap_content"
+                       android:layout_height="26dp"
+                       android:layout_marginLeft="11dp"
+                       android:background="@color/h00FF00"
+                       android:text="@string/lbl_add"
+                       android:textAppearance="@style/MyTabLayoutTextAppearance"
+                       android:textColor="#000" />
+
+               </LinearLayout>
+           </LinearLayout>
+       </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

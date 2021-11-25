@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_height="130dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_remove_dialog"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="21dp"
+            android:textSize="@dimen/textSize15"
+            android:textColor="@color/h000000"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:background="@color/hFF0000"
+                android:id="@+id/btn_cancel"
+                android:layout_marginRight="31dp"
+                android:text="@string/lbl_cancel"
+                android:textSize="@dimen/textSize14"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:background="@color/h00FF00"
+                android:text="@string/lbl_delete"
+                android:id="@+id/btn_delete"
+                android:textSize="@dimen/textSize14"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

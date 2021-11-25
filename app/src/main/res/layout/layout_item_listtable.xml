@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_marginBottom="50dp"
+        android:layout_centerInParent="true"
+        android:layout_width="130dp"
+        android:layout_height="115dp"
+        android:background="@drawable/boder_table"
+        android:gravity="center">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="107dp"
+            android:id="@+id/linear_table"
+            android:layout_height="83dp"
+            android:background="@drawable/ic_tablelist">
+            <TextView
+                android:id="@+id/txt_table"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/numberTable"
+                android:text="2"
+                android:textColor="@color/hFFFFFF"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
